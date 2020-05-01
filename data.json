@@ -1,0 +1,40 @@
+{
+  "data" : [
+  {
+    "productcost" : "30",
+    "productname" : "rice"
+  },
+  {
+    "productcost" : "40",
+    "productname" : "wheat"
+  },
+  {
+    "productcost" : "25",
+    "productname" : "tomato"
+  },
+  {
+    "productcost" : "35",
+    "productname" : "onion"
+  },
+  {
+    "productcost" : "36",
+    "productname" : "potato"
+  },
+  {
+    "productcost" : "60",
+    "productname" : "maggi"
+  },
+  {
+    "productcost" : "70",
+    "productname" : "sweetcorn"
+  },
+  {
+    "productcost" : "100",
+    "productname" : "cashew"
+  },
+  {
+    "productcost" : "90",
+    "productname" : "badham"
+  }
+  ]
+}
