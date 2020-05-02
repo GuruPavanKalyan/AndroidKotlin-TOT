@@ -15,7 +15,7 @@ Welcome to KotlinNotebook documentation!
 
 
 
-Indices and tables
+Tables
 ==================
 
 * :ref:`genindex`
