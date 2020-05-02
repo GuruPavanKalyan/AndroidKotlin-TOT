@@ -10,7 +10,7 @@ Welcome to KotlinNotebook documentation!
    :maxdepth: 2
    :caption: Contents:
    
-   Document 1
+   document1
    Document 2
 
 
