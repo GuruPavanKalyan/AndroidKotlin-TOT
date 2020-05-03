@@ -10,8 +10,8 @@ Welcome to KotlinNotebook documentation!
    :maxdepth: 2
    :caption: Contents:
    
-   document1
-   Document 2
+   Notifications
+   WorkManager
 
 
 
