@@ -87,7 +87,7 @@ To support Android 7.1 (API level 25) or lower, you must also set a priority for
 On devices running Android 8.0 and higher, all notifications, regardless of priority and importance level, appear in the notification drawer and as app icon badges. After a notification is created and delivered, the user can change the notification channel's importance level in the Android Settings app. The following table shows how the user-visible importance level maps to the notification-channel importance level and the priority constants.
     
 .. image:: importance.png
-    :width: 200px
+    :width: 600px
     :align: center
-    :height: 600px
+    :height: 200px
     :alt: alternate text
