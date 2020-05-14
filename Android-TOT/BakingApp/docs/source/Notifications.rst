@@ -34,7 +34,7 @@ Why is a Notification ?
 .. image:: iamge.png
     :width: 200px
     :align: center
-    :height: 100px
+    :height: 200px
     :alt: alternate text
     
 ************************
@@ -49,5 +49,56 @@ History of Notification
 .. image:: image.png
     :width: 200px
     :align: center
-    :height: 100px
+    :height: 300px
     :alt: alternate text
+    
+************************
+How of Notification
+************************
+
+- In the versions upto Android 7 (Nougat) we can drag the notification from the top of the screen.
+- In the latest versions  of android notification dots are introduced by clicking on it we can view the data trigger from applciation.
+- Notification is created and build using the Notification Service,Notification Manager and Notification Compat.
+- Upto Android version 7 (Nougat) all this tools are same but from the Android version 8 (Oreo) a new built in tool is introduced and named as Notification Channel under the Android Jetpack Components.
+
+*****************************
+Creating Notification Channel
+*****************************
+
+To create a notification channel instance, use the NotificationChannel constructor. Specify an ID that's unique within your package, a user-visible channel name, and an importance for the channel:
+::
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+    NotificationChannel notificationChannel = 
+         new NotificationChannel(CHANNEL_ID, "Mascot Notification",
+         NotificationManager.IMPORTANCE_DEFAULT);
+}
+
+
+******************************
+Imporatance Level and Priority 
+******************************
+
+    The NotificationChannel constructor, which is available in Android 8.0 (API level 26) and higher, requires an importance level. The channel's importance determines the instrusiveness of the notifications posted in that channel. For example, notifications with a higher importance might make sound and show up in more places than notifications with a lower importance. There are five importance levels, ranging from IMPORTANCE_NONE(0) to IMPORTANCE_HIGH(4).
+
+    To support Android 7.1 (API level 25) or lower, you must also set a priority for each notification. To set a priority, use the setPriority() method with a priority constant from the NotificationCompat class.
+::
+mBuilder.setPriority(NotificationCompat.PRIORITY_HIGH);
+
+    On devices running Android 8.0 and higher, all notifications, regardless of priority and importance level, appear in the notification drawer and as app icon badges. After a notification is created and delivered, the user can change the notification channel's importance level in the Android Settings app. The following table shows how the user-visible importance level maps to the notification-channel importance level and the priority constants.
++-------------------------------+-------------------------------------+----------------------------------+
+| User-visible importance level | Importance (Android 8.0 and higher) | Priority (Android 7.1 and lower) |
++===============================+=====================================+==================================+
+| **Urgent**
+  *Makes a sound and appears as*
+  *a heads-up notification*         | IMPORTANCE_HIGH | PRIORITY_HIGH or PRIORITY_MAX  |
++-------------------------------+-------------------------------------+----------------------------------+
+| **High**
+   *Makes a sound* | IMPORTANCE_DEFAULT | PRIORITY_DEFAULT |
++-------------------------------+-------------------------------------+----------------------------------+
+| **Medium**
+   *No sound* | IMPORTANCE_LOW | PRIORITY_LOW  |
++-------------------------------+-------------------------------------+----------------------------------+
+| **Low**
+   *No sound and doesn't appear*
+   *in the status bar*      | IMPORTANCE_MIN  | PRIORITY_MIN |
++-------------------------------+-------------------------------------+----------------------------------+
