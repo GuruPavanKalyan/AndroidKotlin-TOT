@@ -89,5 +89,5 @@ On devices running Android 8.0 and higher, all notifications, regardless of prio
 .. image:: importance.png
     :width: 200px
     :align: center
-    :height: 300px
+    :height: 600px
     :alt: alternate text
