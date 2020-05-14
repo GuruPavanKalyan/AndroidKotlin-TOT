@@ -33,7 +33,7 @@ Why is a Notification ?
 .. image:: iamge.png
     :width: 200px
     :align: center
-    :height: 200px
+    :height: 400px
     :alt: alternate text
     
 ************************
