@@ -46,9 +46,9 @@ History of Notification
 - Now it is also coming with the notifications dots to make use have the fast interaction with the applications easily.
 
 .. image:: image.png
-    :width: 200px
+    :width: 300px
     :align: center
-    :height: 300px
+    :height: 500px
     :alt: alternate text
     
 ************************
@@ -86,20 +86,8 @@ To support Android 7.1 (API level 25) or lower, you must also set a priority for
 
 On devices running Android 8.0 and higher, all notifications, regardless of priority and importance level, appear in the notification drawer and as app icon badges. After a notification is created and delivered, the user can change the notification channel's importance level in the Android Settings app. The following table shows how the user-visible importance level maps to the notification-channel importance level and the priority constants.
     
-+-------------------------------+-------------------------------------+----------------------------------+
-| User-visible importance level | Importance (Android 8.0 and higher) | Priority (Android 7.1 and lower) |
-+===============================+=====================================+==================================+
-| **Urgent**
-  *Makes a sound and appears as*
-  *a heads-up notification*     | IMPORTANCE_HIGH | PRIORITY_HIGH or PRIORITY_MAX  |
-+-------------------------------+-------------------------------------+----------------------------------+
-| **High**
-   *Makes a sound* | IMPORTANCE_DEFAULT | PRIORITY_DEFAULT |
-+-------------------------------+-------------------------------------+----------------------------------+
-| **Medium**
-   *No sound* | IMPORTANCE_LOW | PRIORITY_LOW  |
-+-------------------------------+-------------------------------------+----------------------------------+
-| **Low**
-   *No sound and doesn't appear*
-   *in the status bar*      | IMPORTANCE_MIN  | PRIORITY_MIN |
-+-------------------------------+-------------------------------------+----------------------------------+
+.. image:: importance.png
+    :width: 200px
+    :align: center
+    :height: 300px
+    :alt: alternate text
